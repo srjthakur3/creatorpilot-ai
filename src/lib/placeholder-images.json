@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "abstract-tech-1",
+      "description": "Abstract visualization of digital networks and data streams.",
+      "imageUrl": "https://picsum.photos/seed/abstracttech1/1200/800",
+      "imageHint": "abstract technology network"
+    },
+    {
+      "id": "creator-portrait-diverse-1",
+      "description": "Portrait of a young female creator smiling, working on a laptop in a bright studio.",
+      "imageUrl": "https://picsum.photos/seed/creatorportrait1/600/400",
+      "imageHint": "creator portrait"
+    },
+    {
+      "id": "creator-portrait-diverse-2",
+      "description": "Portrait of a male creator deeply focused on editing video on a desktop setup.",
+      "imageUrl": "https://picsum.photos/seed/creatorportrait2/600/400",
+      "imageHint": "video editor workspace"
+    },
+    {
+      "id": "creator-portrait-diverse-3",
+      "description": "A diverse group of creators collaborating around a table with laptops and tablets.",
+      "imageUrl": "https://picsum.photos/seed/creatorportrait3/1200/800",
+      "imageHint": "creator collaboration team"
+    },
+    {
+      "id": "dashboard-preview",
+      "description": "A clean, modern dashboard interface showcasing content creation analytics.",
+      "imageUrl": "https://picsum.photos/seed/creatorpilot1/1200/800",
+      "imageHint": "dashboard ui analytics"
+    },
+    {
+      "id": "content-creation-setup",
+      "description": "A well-lit desk setup with a camera, microphone, lighting, and multiple monitors.",
+      "imageUrl": "https://picsum.photos/seed/creatorsetup1/1920/1080",
+      "imageHint": "content creator desk"
+    }
+  ]
 }

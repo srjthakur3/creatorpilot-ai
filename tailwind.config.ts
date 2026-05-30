@@ -11,59 +11,59 @@ export default {
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        headline: ['Space Grotesk', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        background: 'hsl(0, 0%, 6%)', // Deep Black
+        foreground: 'hsl(0, 0%, 90%)', // Light Gray for foreground text
         card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
+          DEFAULT: 'hsl(0, 0%, 10%)', // Darker card background
+          foreground: 'hsl(0, 0%, 90%)',
         },
         popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
+          DEFAULT: 'hsl(0, 0%, 10%)',
+          foreground: 'hsl(0, 0%, 90%)',
         },
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: 'hsl(34, 90%, 50%)', // Energetic Orange
+          foreground: 'hsl(0, 0%, 10%)', // Dark text on orange
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: 'hsl(0, 0%, 30%)', // Darker Gray
+          foreground: 'hsl(0, 0%, 90%)',
         },
         muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
+          DEFAULT: 'hsl(0, 0%, 20%)', // Slightly lighter dark gray for muted
+          foreground: 'hsl(0, 0%, 60%)', // Lighter gray for muted foreground
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
+          DEFAULT: 'hsl(0, 0%, 30%)', // Soft Gray
+          foreground: 'hsl(0, 0%, 90%)',
         },
         destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
+          DEFAULT: 'hsl(0, 70%, 50%)', // Standard destructive red
+          foreground: 'hsl(0, 0%, 90%)',
         },
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
+        border: 'hsl(0, 0%, 25%)', // Darker border
+        input: 'hsl(0, 0%, 20%)', // Darker input background
+        ring: 'hsl(34, 90%, 50%)', // Orange ring
         chart: {
-          '1': 'hsl(var(--chart-1))',
-          '2': 'hsl(var(--chart-2))',
-          '3': 'hsl(var(--chart-3))',
-          '4': 'hsl(var(--chart-4))',
-          '5': 'hsl(var(--chart-5))',
+          '1': 'hsl(34, 90%, 50%)', // Orange
+          '2': 'hsl(0, 0%, 70%)', // Soft Gray
+          '3': 'hsl(0, 0%, 50%)', // Darker Gray
+          '4': 'hsl(200, 50%, 60%)', // Example accent color
+          '5': 'hsl(100, 50%, 60%)', // Example accent color
         },
         sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))',
+          DEFAULT: 'hsl(0, 0%, 10%)', // Sidebar background
+          foreground: 'hsl(0, 0%, 90%)', // Sidebar foreground
+          primary: 'hsl(34, 90%, 50%)', // Orange for sidebar primary elements
+          'primary-foreground': 'hsl(0, 0%, 10%)', // Dark text on orange sidebar primary
+          accent: 'hsl(0, 0%, 25%)', // Darker Gray for sidebar accent
+          'accent-foreground': 'hsl(0, 0%, 90%)', // Light text on sidebar accent
+          border: 'hsl(0, 0%, 25%)', // Sidebar border
+          ring: 'hsl(34, 90%, 50%)', // Orange ring for sidebar
         },
       },
       borderRadius: {
