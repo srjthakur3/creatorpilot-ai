@@ -11,6 +11,7 @@ export async function generateContent(prompt: string) {
     });
 
     const result = await model.generateContent(prompt);
+
     return result.response.text();
   } catch (error) {
     console.error(error);
