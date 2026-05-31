@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { generateContent } from "@/lib/gemini";
+
 
 export default function DashboardPage() {
   const [topic, setTopic] = useState("");
@@ -13,14 +13,27 @@ export default function DashboardPage() {
       setOutput("Please enter a topic");
       return;
     }
-
+  
     setLoading(true);
-
-    const prompt = `${type} for: ${topic}`;
-
-    const result = await generateContent(prompt);
-
-    setOutput(result);
+  
+    try {
+      const prompt = `${type} for: ${topic}`;
+  
+      const response = await fetch("/api/generate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt }),
+      });
+  
+      const data = await response.json();
+  
+      setOutput(data.result || "No output");
+    } catch (error) {
+      setOutput("Error generating content");
+    }
+  
     setLoading(false);
   }
 
