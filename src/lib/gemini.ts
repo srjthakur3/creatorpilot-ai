@@ -13,8 +13,9 @@ export async function generateContent(prompt: string) {
     const result = await model.generateContent(prompt);
 
     return result.response.text();
-  } catch (error) {
-    console.error(error);
-    return "Error generating content";
+  } catch (error: any) {
+    console.error("GEMINI ERROR:", error);
+
+    return `ERROR: ${error?.message || JSON.stringify(error)}`;
   }
 }
